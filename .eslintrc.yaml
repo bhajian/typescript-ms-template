@@ -1,0 +1,18 @@
+parser: '@typescript-eslint/parser'
+extends:
+  - 'eslint:recommended'
+  - 'plugin:prettier/recommended'
+  - 'plugin:@typescript-eslint/recommended'
+  - 'plugin:@typescript-eslint/eslint-recommended'
+
+plugins:
+  - jest
+  - '@typescript-eslint'
+  - 'prettier'
+
+rules:
+  'prettier/prettier': ['error', {}, { usePrettierrc: true }]
+  no-undef: 0
+  no-unused-vars: 0
+  '@typescript-eslint/no-empty-interface':
+    ['error', { 'allowSingleExtends': true }]

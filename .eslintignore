@@ -1,0 +1,15 @@
+*.js
+!jest.config.js
+!.prettierrc.js
+*.d.ts
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# Infra
+!lib/cloudfront-functions/index.js
+!lib/health-check/index.js
+
+src/frontend
